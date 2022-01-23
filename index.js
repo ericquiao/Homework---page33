@@ -50,11 +50,11 @@ fs.readdir(directoryPath, (err, files) => {
 
      let inputPath =(input.slice(0,44)).toString()+`${element}`
 
-     console.log(inputPath)
+   //  console.log(inputPath)
 
      let output = (input.slice(0,39)+input.slice(year)+year+input.slice(38,39)+month+input.slice(38,39)).toString()+`${element}`
 
-     console.log(output)
+  //   console.log(output)
 
        fse.copy(inputPath,output,err=>{
         if(err) return console.error(err)
